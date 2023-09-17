@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0062be;
+    transition: 0.5s;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    
+}
+
+header ul li{
+    list-style: none;
+
+    transition: 0.5s;
+}
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight :600;
+    margin-left: 40px;
+    text-decoration: none ;
+}
+
+ header ul li  :hover{
+    
+    left: 10px;
+}
+
+ header li ::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    transform: scaleX(0);
+    transition: 0.5ns;
+    transform-origin: left;
+
+}
+
+header ul li :hover ::before{
+    transform: scaleX(1);
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+    
+}
+
+.content .textBox h2{
+    color: #ffff;
+    font-size: 4em;
+    line-height: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.like{
+  font-size: 1.5em;
+}
+
+.content .textBox p{
+    color: #fff;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #111;
+    border-radius: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    padding-right: 20px;
+    justify-content: flex-end ;
+    margin-top: 50px ;
+}
+
+.content .imgBox img{
+    max-width: 220px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li img{
+    max-width: 40px;
+}
+
+.thumb li :hover{
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li{
+    list-style: none;
+    color: #fff ;
+}
+
+.sci li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+
+}
